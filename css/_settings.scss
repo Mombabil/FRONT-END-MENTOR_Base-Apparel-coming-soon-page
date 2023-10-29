@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600&display=swap');
+
+// Colors
+
+// Primary
+$desaturatedRed: hsl(0, 36%, 70%);
+$softRed: hsl(0, 93%, 68%);
+
+// Neutral
+$darkGrayishRed: hsl(0, 6%, 24%);
+
+// Gradients
+$first: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+$second: Linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+body{
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+}

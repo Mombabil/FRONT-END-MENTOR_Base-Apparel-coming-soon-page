@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600&display=swap");
+body {
+  margin: 0;
+  font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+body .content {
+  width: 1440px;
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+}
+body .content .text {
+  width: 830px;
+  background: url("../images/bg-pattern-desktop.svg") no-repeat, linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+body .content .text h1 {
+  align-self: flex-start;
+  margin: 0;
+  padding-left: 20%;
+  padding-top: 8%;
+  padding-bottom: 120px;
+}
+body .content .text .support {
+  display: none;
+}
+body .content .text h2 {
+  text-transform: uppercase;
+  font-size: 4.1em;
+  font-weight: 300;
+  width: 25%;
+  letter-spacing: 20px;
+  align-self: flex-start;
+  padding-left: 20%;
+  margin: 0;
+  color: hsl(0, 36%, 70%);
+  line-height: 70px;
+}
+body .content .text h2 span {
+  font-weight: 600;
+  color: hsl(0, 6%, 24%);
+}
+body .content .text p {
+  width: 52%;
+  align-self: flex-start;
+  padding-left: 20%;
+  padding-bottom: 30px;
+  font-size: 16px;
+  color: hsl(0, 36%, 70%);
+  line-height: 30px;
+}
+body .content .text form {
+  width: 52%;
+  align-self: flex-start;
+  margin-left: 20%;
+  display: flex;
+  border: 1px solid lightgray;
+  border-radius: 50px;
+}
+body .content .text form input {
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  padding: 16px 28px;
+  color: hsl(0, 6%, 24%);
+  font-weight: 600;
+}
+body .content .text form input:focus {
+  outline: none;
+}
+body .content .text form input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(0, 36%, 70%);
+  opacity: 0.4;
+}
+body .content .text form span.logerror {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+}
+body .content .text form button {
+  border-radius: 50px;
+  border: none;
+  background: Linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  padding: 16px 42px;
+  cursor: pointer;
+}
+body .content .text form button:hover {
+  background: hsl(0, 80%, 86%);
+  transform: scale(1.1);
+}
+body .content .text .error {
+  color: hsl(0, 93%, 68%);
+}
+body .content .support {
+  width: 610px;
+  background: url("../images/hero-desktop.jpg") center/cover no-repeat;
+}
+@media screen and (max-width: 375px) {
+  body .content {
+    display: flex;
+    width: 375px;
+    height: 100vh;
+  }
+  body .content .text h1 {
+    padding-left: 10%;
+    padding-bottom: 25px;
+  }
+  body .content .text h1 img {
+    width: 75%;
+  }
+  body .content .text .support {
+    background: url("../images/hero-mobile.jpg") center/cover no-repeat;
+    width: 375px;
+    min-height: 250px;
+    display: block;
+  }
+  body .content .text h2 {
+    font-size: 3em;
+    text-align: center;
+    align-self: center;
+    padding-left: 0;
+    width: 100%;
+    line-height: 50px;
+    letter-spacing: 15px;
+    padding-top: 60px;
+  }
+  body .content .text p {
+    font-weight: 400;
+    align-self: center;
+    padding-left: 0;
+    width: 85%;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+  }
+  body .content .text form {
+    width: 85%;
+    align-self: center;
+    margin-left: 0;
+  }
+  body .content .text form input {
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    padding: 0 16px;
+  }
+  body .content .text form input::placeholder {
+    font-size: 14px;
+  }
+  body .content .text form span.logerror {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+  }
+  body .content .text form button {
+    border-radius: 50px;
+    border: none;
+    background: Linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 12px 28px;
+    cursor: pointer;
+  }
+  body .content .text form button:hover {
+    background: hsl(0, 80%, 86%);
+    transform: scale(1.1);
+  }
+  body .content .text .error {
+    color: hsl(0, 93%, 68%);
+  }
+  body .content .support {
+    display: none;
+  }
+}
+body footer {
+  position: fixed;
+  bottom: 0;
+  color: white;
+}
+@media screen and (max-width: 375px) {
+  body footer {
+    color: black;
+  }
+}/*# sourceMappingURL=style.css.map */
